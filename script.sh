@@ -1,5 +1,5 @@
 #! /usr/bin/bash
-PWD=`pwd`
+PWD="/home/alvaro/Documents/Proyectos/bash/workspace-loader"
 DELFOSTI="/home/alvaro/Documents/Delfosti"
 PERSONAL="/home/alvaro/Documents/Proyectos"
 export DELFOSTI
@@ -10,12 +10,12 @@ SCRIPT_NOT_FOUND="Workspace script not found"
 if [ -d  "$PWD/workspaces" ]; then
     case "$1" in
     "phi") if [ -f  "$PWD/workspaces/phi.sh" ]; then
-                ./workspaces/phi.sh
+                sh "$PWD/workspaces/phi.sh"
             else
                 echo $SCRIPT_NOT_FOUND
             fi;;
     "magire") if [ -f "$PWD/workspaces/magire.sh" ]; then
-                ./workspaces/magire.sh
+                sh "$PWD/workspaces/magire.sh"
             else
                 echo $SCRIPT_NOT_FOUND
             fi;;
