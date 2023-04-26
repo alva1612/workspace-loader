@@ -14,6 +14,12 @@ if [ -d  "$PWD/workspaces" ]; then
             else
                 echo $SCRIPT_NOT_FOUND
             fi;;
+    "this") if [ -f  "$PWD/workspaces/workspace-loader.sh" ]; then
+                sh "$PWD/workspaces/workspace-loader.sh"
+            else
+                echo $SCRIPT_NOT_FOUND
+            fi;;
+    
     "magire") if [ -f "$PWD/workspaces/magire.sh" ]; then
                 sh "$PWD/workspaces/magire.sh"
             else

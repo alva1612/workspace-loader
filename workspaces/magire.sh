@@ -1,4 +1,4 @@
 #! /usr/bin/bash
 
-cd $PERSONAL/magire
+cd $PERSONAL/magire/serverless
 codium .
